@@ -1,0 +1,9 @@
+<h2>Tweet something</h2>
+<%= form_with url: home_tweet_path, local: true do |form| %>
+  <div>
+    <%= form.text_area :tweet, col: 100, row: 20 %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
